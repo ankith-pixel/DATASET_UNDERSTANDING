@@ -38,8 +38,8 @@ Check how each feature affects the label:
 
 - [**Correlation**](https://medium.com/@abdallahashraf90x/all-you-need-to-know-about-correlation-for-machine-learning-e249fec292e9) → numerical vs numerical
 - [**ANOVA**](https://medium.com/data-science/anova-for-feature-selection-in-machine-learning-d9305e228476) → categorical feature → numerical target  
-- **Chi-Square** → categorical → categorical  
-- **Mutual Information** → works for any feature type  
+- [**Chi-Square**](https://medium.com/data-science/chi-square-test-for-feature-selection-in-machine-learning-206b1f0b8223) → categorical → categorical  
+- [**Mutual Information**](https://medium.com/@suvendulearns/decoding-mutual-information-mi-a-guide-for-machine-learning-practitioners-b0f0ca0b30c9) → works for any feature type  
 
 This reveals predictive features vs useless ones.
 

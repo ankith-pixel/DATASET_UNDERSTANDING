@@ -112,11 +112,14 @@ df_encode = df.copy()
 for col in df_encode.select_dtypes(include=["object"]).columns:
     df_encode[col] = df_encode[col].astype('category').cat.codes
 
-x = df_encode.drop(columns=['Survived']).dropna()
-y = df_encode['Survived'].dropna()
+df_clear = df_encode.dropna()
+
+x = df_clear.drop(columns=['Survived'])
+y = df_clear['Survived']
 
 mi_score = mutual_info_classif(x,y, discrete_features='auto')
 mi_score = pd.Series(mi_score, index = x.columns)
 mi_score = mi_score.sort_values(ascending=False)
 
 print(mi_score)
+
